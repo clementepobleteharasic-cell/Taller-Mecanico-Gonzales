@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mecánica González | Taller Mecánico en Quillota — Scanner, Diagnóstico y Mantención</title>
+  <meta name="description" content="Mecánica González: taller mecánico en Quillota, Valparaíso. Especialistas en scanner automotriz, diagnóstico electrónico, inyección electrónica, frenos, mantención por kilometraje y mecánica general. Calificación 5.0 ★ en Google. Llama al +56 9 9059 2644." />
+  <meta name="keywords" content="taller mecánico Quillota, mecánica González Quillota, scanner automotriz Quillota, diagnóstico electrónico Quillota, inyección electrónica Quillota, frenos Quillota, mantención automóvil Quillota, taller mecánico Valparaíso, mecánica general Quillota, reparación autos Quillota" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Mecánica González" />
+  <link rel="canonical" href="https://mecanicagonzalez.cl/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mecánica González | Taller Mecánico en Quillota" />
+  <meta property="og:description" content="Especialistas en scanner automotriz, diagnóstico electrónico, frenos, mantención y mecánica general en Quillota, Valparaíso. 5.0 ★ en Google." />
+  <meta property="og:locale" content="es_CL" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Mecánica González",
+    "description": "Taller mecánico en Quillota especializado en scanner automotriz, diagnóstico electrónico, inyección electrónica, frenos, mantención por kilometraje y mecánica general.",
+    "url": "https://mecanicagonzalez.cl",
+    "telephone": "+56990592644",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "F-394",
+      "addressLocality": "Quillota",
+      "addressRegion": "Valparaíso",
+      "addressCountry": "CL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -32.8810,
+      "longitude": -71.2552
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:30" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "10",
+      "bestRating": "5"
+    },
+    "priceRange": "$$",
+    "areaServed": ["Quillota", "Valparaíso", "La Calera", "La Cruz", "Hijuelas"],
+    "hasMap": "https://maps.google.com/?q=Mecanica+Gonzalez+Quillota",
+    "sameAs": ["https://maps.app.goo.gl/mecanicagonzalez"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { jakarta: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            zinc: { 950: '#09090b' },
+            gold: {
+              300: '#fcd27a',
+              400: '#f5b931',
+              500: '#e5a000',
+              600: '#c47f00',
+            }
+          },
+          backgroundImage: {
+            'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\")"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
+      --gold: #f5b931;
+      --gold-dim: rgba(245,185,49,0.15);
+      --gold-glow: rgba(245,185,49,0.35);
+      --surface: #111113;
+      --surface-2: #18181b;
+      --surface-3: #1f1f23;
+      --border: rgba(255,255,255,0.07);
+      --border-gold: rgba(245,185,49,0.25);
+      --text-muted: #71717a;
+      --text-sub: #a1a1aa;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { background: var(--surface); }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #09090b;
+      color: #fafafa;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      mix-blend-mode: overlay;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: #09090b; }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+    /* ── REVEAL ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple);
+    }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.94);
+      transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple);
+    }
+    .reveal-scale.visible { opacity: 1; transform: scale(1); }
+
+    /* ── NAVBAR ── */
+    #navbar {
+      transition: background 0.5s var(--ease-apple), border-color 0.5s var(--ease-apple), backdrop-filter 0.5s;
+    }
+    #navbar.scrolled {
+      background: rgba(9,9,11,0.82);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── GRADIENT TEXT ── */
+    .text-gradient {
+      background: linear-gradient(135deg, #fff 0%, #e4e4e7 40%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .text-gradient-gold {
+      background: linear-gradient(135deg, var(--gold) 0%, #fcd27a 60%, #fff8e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ── SHIMMER BUTTON ── */
+    .btn-shimmer {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f5b931, #e5a000);
+      color: #09090b;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      transition: transform 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple), filter 0.3s;
+    }
+    .btn-shimmer::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.55) 50%, transparent 70%);
+      transform: skewX(-20deg);
+      animation: shimmer 2.8s infinite;
+    }
+    @keyframes shimmer {
+      0% { left: -75%; }
+      60%, 100% { left: 130%; }
+    }
+    .btn-shimmer:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 48px rgba(245,185,49,0.45);
+      filter: brightness(1.08);
+    }
+    .btn-shimmer:active { transform: translateY(0); }
+
+    /* ── GHOST BUTTON ── */
+    .btn-ghost {
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+      transition: background 0.35s var(--ease-apple), border-color 0.35s, transform 0.35s var(--ease-apple);
+    }
+    .btn-ghost:hover {
+      background: var(--gold-dim);
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    /* ── BENTO CARDS ── */
+    .bento-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      transition: transform 0.45s var(--ease-apple), box-shadow 0.45s var(--ease-apple), border-color 0.35s;
+      position: relative;
+      overflow: hidden;
+    }
+    .bento-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(ellipse at 0% 0%, var(--gold-dim) 0%, transparent 65%);
+      opacity: 0;
+      transition: opacity 0.4s var(--ease-apple);
+      pointer-events: none;
+    }
+    .bento-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.55), 0 0 0 1px var(--border-gold);
+      border-color: var(--border-gold);
+    }
+    .bento-card:hover::before { opacity: 1; }
+
+    /* ── BENTO FEATURED CARD ── */
+    .bento-featured {
+      background: linear-gradient(135deg, #1a1608 0%, #221c08 40%, #1a1608 100%);
+      border-color: var(--border-gold);
+    }
+
+    /* ── SERVICE ICON ── */
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold-dim);
+      border: 1px solid var(--border-gold);
+      flex-shrink: 0;
+    }
+
+    /* ── STAR ── */
+    .star-fill { color: var(--gold); }
+
+    /* ── REVIEW CARD ── */
+    .review-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      transition: transform 0.4s var(--ease-apple), border-color 0.35s;
+    }
+    .review-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-gold);
+    }
+
+    /* ── STEP NUMBER ── */
+    .step-num {
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      background: linear-gradient(180deg, rgba(245,185,49,0.55) 0%, rgba(245,185,49,0.08) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      user-select: none;
+    }
+
+    /* ── HERO IMAGE ── */
+    .hero-img {
+      filter: grayscale(25%) brightness(0.78) contrast(1.08);
+      transition: filter 0.8s var(--ease-apple);
+    }
+    .hero-img:hover { filter: grayscale(0%) brightness(0.9) contrast(1.05); }
+
+    /* ── GALLERY IMAGE ── */
+    .gallery-img {
+      filter: grayscale(40%) brightness(0.75);
+      transition: filter 0.7s var(--ease-apple), transform 0.6s var(--ease-apple);
+      border-radius: 1.25rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-img:hover { filter: grayscale(0%) brightness(0.92); }
+
+    /* ── DIVIDER LINE ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* ── BADGE ── */
+    .badge-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold-dim);
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+    }
+
+    /* ── HOURS TABLE ── */
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.875rem;
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-today { color: var(--gold); font-weight: 600; }
+
+    /* ── MAP EMBED ── */
+    .map-container iframe { border-radius: 1.25rem; filter: grayscale(30%) brightness(0.75) contrast(1.1); }
+
+    /* ── GLOW DOT ── */
+    .glow-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 10px #22c55e, 0 0 20px rgba(34,197,94,0.4);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.7; }
+    }
+
+    /* ── HERO GRID BACKGROUND ── */
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(245,185,49,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,185,49,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-track {
+      display: flex;
+      gap: 3rem;
+      animation: marquee 22s linear infinite;
+      width: max-content;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .marquee-wrap { overflow: hidden; }
+
+    /* ── MOBILE TOUCH RIPPLE ── */
+    @media (hover: none) {
+      .bento-card:active { transform: scale(0.98); }
+      .btn-shimmer:active { transform: scale(0.97); }
+    }
+
+    /* ── HEADING SIZE ── */
+    .h1-hero {
+      font-size: clamp(2.6rem, 7vw, 6rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+    }
+    .h2-section {
+      font-size: clamp(2rem, 5vw, 3.75rem);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+      font-weight: 800;
+    }
+
+    /* ── STICKY WHATSAPP ── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 24px;
+      z-index: 1000;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 28px rgba(37,211,102,0.45);
+      transition: transform 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
+      cursor: pointer;
+    }
+    .wa-float:hover {
+      transform: scale(1.12) translateY(-3px);
+      box-shadow: 0 16px 40px rgba(37,211,102,0.6);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     STICKY WHATSAPP
+══════════════════════════════════════════ -->
+<a href="https://wa.me/56990592644?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20visita%20al%20taller" target="_blank" class="wa-float" title="Escríbenos por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.114.553 4.1 1.52 5.824L.057 23.852a.5.5 0 0 0 .614.614l6.098-1.48A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.895 0-3.66-.502-5.183-1.376l-.371-.214-3.862.938.97-3.782-.231-.387A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-5 md:px-8 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3 group">
+      <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#f5b931,#e5a000);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(245,185,49,0.4)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#09090b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+      </div>
+      <div>
+        <p class="text-white font-bold text-sm leading-none tracking-tight">Mecánica González</p>
+        <p style="color:var(--gold);font-size:0.65rem;letter-spacing:0.1em;font-weight:600;text-transform:uppercase">Taller · Quillota</p>
+      </div>
+    </a>
+
+    <!-- Nav Links (desktop) -->
+    <div class="hidden md:flex items-center gap-7">
+      <a href="#servicios" style="color:var(--text-sub);font-size:0.875rem;font-weight:500;transition:color 0.3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-sub)'">Servicios</a>
+      <a href="#resenas" style="color:var(--text-sub);font-size:0.875rem;font-weight:500;transition:color 0.3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-sub)'">Reseñas</a>
+      <a href="#proceso" style="color:var(--text-sub);font-size:0.875rem;font-weight:500;transition:color 0.3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-sub)'">Cómo trabajamos</a>
+      <a href="#contacto" style="color:var(--text-sub);font-size:0.875rem;font-weight:500;transition:color 0.3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-sub)'">Contacto</a>
+    </div>
+
+    <!-- CTA -->
+    <a href="https://wa.me/56990592644?text=Hola%2C%20quisiera%20agendar%20una%20atenci%C3%B3n%20en%20el%20taller" target="_blank" class="btn-shimmer inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.7 19.79 19.79 0 0 1 1.61 4.1 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.68 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-.91a2 2 0 0 1 2.11-.45c.91.33 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+      Agendar
+    </a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="relative min-h-screen hero-grid flex flex-col justify-center overflow-hidden pt-24 pb-16">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img
+      src="https://images.unsplash.com/photo-1618476408943-4af70da9a296?w=1600&q=80&fit=crop"
+      alt="Taller mecánico profesional"
+      class="hero-img w-full h-full object-cover"
+    />
+    <!-- Gradient Overlay -->
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,9,11,0.97) 0%,rgba(9,9,11,0.82) 55%,rgba(9,9,11,0.6) 100%)"></div>
+    <!-- Gold glow bottom -->
+    <div style="position:absolute;bottom:-20%;left:50%;transform:translateX(-50%);width:80%;height:40%;background:radial-gradient(ellipse,rgba(245,185,49,0.08) 0%,transparent 70%);pointer-events:none"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 w-full">
+    <div class="max-w-3xl">
+
+      <!-- Badge -->
+      <div class="badge-gold mb-7 reveal" style="transition-delay:0.05s">
+        <span class="glow-dot" style="width:6px;height:6px"></span>
+        Taller Mecánico · Quillota, Valparaíso
+      </div>
+
+      <!-- H1 -->
+      <h1 class="h1-hero text-gradient mb-6 reveal" style="transition-delay:0.15s">
+        Tu vehículo merece<br/>atención de<br/><span class="text-gradient-gold">expertos en Quillota.</span>
+      </h1>
+
+      <!-- SEO hidden but readable subtext -->
+      <p class="sr-only">Mecánica González — Taller mecánico en Quillota, Valparaíso. Scanner automotriz, diagnóstico electrónico, inyección electrónica, frenos, mantención por kilometraje y mecánica general. Atención de lunes a sábado.</p>
+
+      <!-- Sub -->
+      <p class="reveal" style="font-size:clamp(1rem,2.2vw,1.2rem);color:var(--text-sub);font-weight:400;line-height:1.65;max-width:520px;transition-delay:0.25s">
+        <strong style="color:#d4d4d8;font-weight:600">Scanner automotriz, diagnóstico electrónico y mecánica general</strong> en Quillota. Atendemos con transparencia, rapidez y un estándar que pocos talleres del sector ofrecen.
+      </p>
+
+      <!-- Rating strip -->
+      <div class="flex items-center gap-3 mt-7 mb-9 reveal" style="transition-delay:0.32s">
+        <div class="flex gap-0.5">
+          <svg class="star-fill" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <span style="font-weight:700;font-size:1rem;color:#fff">5.0</span>
+        <span style="color:var(--text-muted);font-size:0.85rem">· 10 reseñas en Google Maps</span>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap gap-3 reveal" style="transition-delay:0.4s">
+        <a href="tel:+56990592644" class="btn-shimmer inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 text-base font-bold">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.7 19.79 19.79 0 0 1 1.61 4.1 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.68 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-.91a2 2 0 0 1 2.11-.45c.91.33 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+          Llamar ahora
+        </a>
+        <a href="#servicios" class="btn-ghost inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 text-base font-semibold">
+          Ver servicios
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 reveal" style="transition-delay:0.6s">
+    <span style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted)">Descubrir</span>
+    <div style="width:1px;height:40px;background:linear-gradient(180deg,var(--gold),transparent);animation:fadeInUp 1.5s ease-in-out infinite"></div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     MARQUEE STRIP
+══════════════════════════════════════════ -->
+<div style="background:linear-gradient(90deg,var(--gold-dim),rgba(245,185,49,0.08),var(--gold-dim));border-top:1px solid var(--border-gold);border-bottom:1px solid var(--border-gold);padding:14px 0;overflow:hidden">
+  <div class="marquee-wrap">
+    <div class="marquee-track" style="color:var(--gold);font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">
+      <span>✦ Scanner Automotriz</span><span>✦ Diagnóstico Electrónico</span><span>✦ Inyección Electrónica</span><span>✦ Frenos &amp; Suspensión</span><span>✦ Mantención Preventiva</span><span>✦ Mecánica General</span><span>✦ Calificación 5.0 Google</span><span>✦ Scanner Automotriz</span><span>✦ Diagnóstico Electrónico</span><span>✦ Inyección Electrónica</span><span>✦ Frenos &amp; Suspensión</span><span>✦ Mantención Preventiva</span><span>✦ Mecánica General</span><span>✦ Calificación 5.0 Google</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     BENTO SERVICES
+══════════════════════════════════════════ -->
+<section id="servicios" class="py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Header -->
+    <div class="mb-16">
+      <div class="badge-gold mb-5 reveal">Nuestros Servicios</div>
+      <h2 class="h2-section text-gradient reveal" style="transition-delay:0.1s">
+        Servicios de mecánica<br/>en Quillota.
+      </h2>
+      <p class="mt-4 reveal" style="color:var(--text-sub);max-width:480px;line-height:1.7;transition-delay:0.2s">
+        Desde un diagnóstico computarizado con scanner hasta la mantención completa por kilometraje. Trabajamos con precisión, repuestos transparentes y tiempos reales en Quillota y toda la Región de Valparaíso.
+      </p>
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+      <!-- FEATURED — Scanner -->
+      <div class="bento-card bento-featured md:col-span-2 md:row-span-2 p-8 md:p-10 reveal" style="transition-delay:0.1s">
+        <div class="service-icon mb-6" style="width:56px;height:56px;border-radius:16px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 8h.01M10 8h4M18 8h.01M6 11h12"/></svg>
+        </div>
+        <div class="badge-gold mb-4" style="font-size:0.65rem">Servicio Estrella</div>
+        <h3 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;letter-spacing:-0.035em;line-height:1.1;color:#fff;margin-bottom:1rem">Scanner &amp;<br/>Diagnóstico Electrónico</h3>
+        <p style="color:var(--text-sub);line-height:1.75;max-width:420px;font-size:0.975rem">
+          Equipos de última generación para leer los códigos de falla de cualquier vehículo. Identificamos el problema en minutos, no en suposiciones. Aplicamos el mismo proceso que usan los concesionarios, pero con la calidez de un taller familiar.
+        </p>
+        <div class="flex items-center gap-3 mt-8">
+          <a href="https://wa.me/56990592644?text=Hola%2C%20quisiera%20agendar%20un%20diagn%C3%B3stico%20automotriz" target="_blank" class="btn-shimmer inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold">
+            Agendar diagnóstico
+          </a>
+        </div>
+        <!-- Decorative scanner wave -->
+        <div style="position:absolute;bottom:0;right:0;width:180px;height:180px;background:radial-gradient(circle,rgba(245,185,49,0.12) 0%,transparent 70%);border-radius:50%;transform:translate(30%,30%);pointer-events:none"></div>
+      </div>
+
+      <!-- Frenos -->
+      <div class="bento-card p-6 reveal" style="transition-delay:0.15s">
+        <div class="service-icon mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>
+        </div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin-bottom:0.4rem">Frenos &amp; Suspensión</h3>
+        <p style="color:var(--text-sub);font-size:0.85rem;line-height:1.65">Revisión completa de discos, pastillas, amortiguadores y dirección. Seguridad primero.</p>
+      </div>
+
+      <!-- Inyección -->
+      <div class="bento-card p-6 reveal" style="transition-delay:0.22s">
+        <div class="service-icon mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin-bottom:0.4rem">Inyección Electrónica</h3>
+        <p style="color:var(--text-sub);font-size:0.85rem;line-height:1.65">Limpieza, calibración y reparación del sistema de inyección. Más potencia, menos consumo.</p>
+      </div>
+
+      <!-- Mantención KM -->
+      <div class="bento-card p-6 reveal" style="transition-delay:0.28s">
+        <div class="service-icon mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin-bottom:0.4rem">Mantención por Km</h3>
+        <p style="color:var(--text-sub);font-size:0.85rem;line-height:1.65">Planes de mantención preventiva según el kilometraje de tu vehículo. Cuidamos tu inversión.</p>
+      </div>
+
+      <!-- Mecánica General -->
+      <div class="bento-card p-6 reveal" style="transition-delay:0.33s">
+        <div class="service-icon mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin-bottom:0.4rem">Mecánica General</h3>
+        <p style="color:var(--text-sub);font-size:0.85rem;line-height:1.65">Motor, transmisión, embrague, correas. Reparamos todo con los repuestos correctos.</p>
+      </div>
+
+      <!-- Maquinaria -->
+      <div class="bento-card p-6 reveal" style="transition-delay:0.38s">
+        <div class="service-icon mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin-bottom:0.4rem">Maquinaria Pesada</h3>
+        <p style="color:var(--text-sub);font-size:0.85rem;line-height:1.65">Diagnóstico y reparación automotriz y de maquinaria agrícola/industrial. Precisión técnica.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     GALLERY STRIP
+══════════════════════════════════════════ -->
+<section class="px-5 md:px-8 pb-24">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 h-56 md:h-72">
+      <div class="overflow-hidden rounded-3xl reveal reveal-scale" style="transition-delay:0.05s">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&q=80&fit=crop" class="gallery-img" alt="Diagnóstico electrónico"/>
+      </div>
+      <div class="overflow-hidden rounded-3xl reveal reveal-scale" style="transition-delay:0.15s">
+        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500&q=80&fit=crop" class="gallery-img" alt="Mecánica de motor"/>
+      </div>
+      <div class="overflow-hidden rounded-3xl reveal reveal-scale" style="transition-delay:0.25s">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80&fit=crop" class="gallery-img" alt="Taller profesional"/>
+      </div>
+      <div class="overflow-hidden rounded-3xl reveal reveal-scale" style="transition-delay:0.35s">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500&q=80&fit=crop&auto=format" class="gallery-img" alt="Frenos y sistema de suspensión" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PROCESO
+══════════════════════════════════════════ -->
+<section id="proceso" class="py-24 px-5 md:px-8" style="background:var(--surface-2)">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="mb-16 text-center max-w-2xl mx-auto">
+      <div class="badge-gold mb-5 reveal" style="justify-content:center">Cómo Trabajamos</div>
+      <h2 class="h2-section text-gradient reveal" style="transition-delay:0.1s">Transparencia<br/>en cada paso.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Step 1 -->
+      <div class="bento-card p-7 reveal" style="transition-delay:0.1s">
+        <div class="step-num">01</div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin:0.75rem 0 0.5rem">Diagnóstico inicial</h3>
+        <p style="color:var(--text-sub);font-size:0.875rem;line-height:1.65">Conectamos el scanner y analizamos todos los sistemas del vehículo. Identificamos la causa raíz, no los síntomas.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bento-card p-7 reveal" style="transition-delay:0.18s">
+        <div class="step-num">02</div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin:0.75rem 0 0.5rem">Presupuesto claro</h3>
+        <p style="color:var(--text-sub);font-size:0.875rem;line-height:1.65">Te entregamos un presupuesto detallado y transparente. Mostramos cada repuesto y su costo. Sin sorpresas.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bento-card p-7 reveal" style="transition-delay:0.26s">
+        <div class="step-num">03</div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin:0.75rem 0 0.5rem">Reparación experta</h3>
+        <p style="color:var(--text-sub);font-size:0.875rem;line-height:1.65">Francisco, Erick y el equipo trabajan con los repuestos aprobados. Te mantenemos informado durante el proceso.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="bento-card p-7 reveal" style="transition-delay:0.34s">
+        <div class="step-num">04</div>
+        <h3 style="font-size:1.15rem;font-weight:700;letter-spacing:-0.025em;color:#fff;margin:0.75rem 0 0.5rem">Entrega y asesoría</h3>
+        <p style="color:var(--text-sub);font-size:0.875rem;line-height:1.65">Entregamos el vehículo en el tiempo acordado y te explicamos qué se hizo y cómo cuidar tu auto a futuro.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     STATS STRIP
+══════════════════════════════════════════ -->
+<div class="py-16 px-5 md:px-8" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="reveal" style="transition-delay:0.05s">
+      <div class="text-gradient-gold" style="font-size:2.8rem;font-weight:800;letter-spacing:-0.04em;line-height:1">5.0</div>
+      <div style="color:var(--text-muted);font-size:0.8rem;margin-top:4px;letter-spacing:0.05em;text-transform:uppercase">Rating Google</div>
+    </div>
+    <div class="reveal" style="transition-delay:0.13s">
+      <div class="text-gradient-gold" style="font-size:2.8rem;font-weight:800;letter-spacing:-0.04em;line-height:1">48h</div>
+      <div style="color:var(--text-muted);font-size:0.8rem;margin-top:4px;letter-spacing:0.05em;text-transform:uppercase">Entrega promedio</div>
+    </div>
+    <div class="reveal" style="transition-delay:0.21s">
+      <div class="text-gradient-gold" style="font-size:2.8rem;font-weight:800;letter-spacing:-0.04em;line-height:1">100%</div>
+      <div style="color:var(--text-muted);font-size:0.8rem;margin-top:4px;letter-spacing:0.05em;text-transform:uppercase">Transparencia</div>
+    </div>
+    <div class="reveal" style="transition-delay:0.29s">
+      <div class="text-gradient-gold" style="font-size:2.8rem;font-weight:800;letter-spacing:-0.04em;line-height:1">10+</div>
+      <div style="color:var(--text-muted);font-size:0.8rem;margin-top:4px;letter-spacing:0.05em;text-transform:uppercase">Reseñas 5 ★</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     RESEÑAS
+══════════════════════════════════════════ -->
+<section id="resenas" class="py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="mb-16">
+      <div class="badge-gold mb-5 reveal">Lo que dicen nuestros clientes en Quillota</div>
+      <h2 class="h2-section text-gradient reveal" style="transition-delay:0.1s">El taller mecánico más<br/>confiable de Quillota.</h2>
+    </div>
+
+    <!-- Reviews Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Review 1 -->
+      <div class="review-card p-7 reveal" style="transition-delay:0.08s">
+        <div class="flex gap-0.5 mb-4">
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p style="color:#e4e4e7;font-size:0.925rem;line-height:1.75;font-style:italic;margin-bottom:1.25rem">"Excelente atención, explican todo de manera clara incluso para quienes sabemos poco de autos. No solo reparan, también orientan con recomendaciones útiles. Son muy transparentes en la compra de repuestos, lo que genera mucha confianza."</p>
+        <div class="flex items-center gap-3">
+          <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f5b931,#e5a000);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:#09090b;flex-shrink:0">D</div>
+          <div>
+            <p style="font-weight:600;font-size:0.875rem;color:#fff">Dallynka Tapia</p>
+            <p style="font-size:0.75rem;color:var(--text-muted)">Hace 8 meses</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card p-7 reveal" style="transition-delay:0.16s">
+        <div class="flex gap-0.5 mb-4">
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p style="color:#e4e4e7;font-size:0.925rem;line-height:1.75;font-style:italic;margin-bottom:1.25rem">"Excelente atención de Francisco. Muy correcto y dando cuenta de todas las compras de repuestos. Un enfoque integral y muy completo con recomendaciones prácticas. Totalmente recomendado."</p>
+        <div class="flex items-center gap-3">
+          <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#6366f1,#818cf8);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:#fff;flex-shrink:0">P</div>
+          <div>
+            <p style="font-weight:600;font-size:0.875rem;color:#fff">Patricio Pantoja</p>
+            <p style="font-size:0.75rem;color:var(--text-muted)">Hace un año</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card p-7 reveal" style="transition-delay:0.24s">
+        <div class="flex gap-0.5 mb-4">
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p style="color:#e4e4e7;font-size:0.925rem;line-height:1.75;font-style:italic;margin-bottom:1.25rem">"Excelente, precisos con los diagnósticos. Tanto automotriz como maquinaria. Los precios están dentro del mercado y la atención es de primer nivel. Definitivamente mi taller de confianza."</p>
+        <div class="flex items-center gap-3">
+          <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#22c55e,#16a34a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:#fff;flex-shrink:0">C</div>
+          <div>
+            <p style="font-weight:600;font-size:0.875rem;color:#fff">Christofer Araya</p>
+            <p style="font-size:0.75rem;color:var(--text-muted)">Local Guide · Hace un año</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card p-7 reveal" style="transition-delay:0.1s">
+        <div class="flex gap-0.5 mb-4">
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p style="color:#e4e4e7;font-size:0.925rem;line-height:1.75;font-style:italic;margin-bottom:1.25rem">"Excelente atención. Me tenía todo solucionado en 48 horas. Presupuesto claro y rapidez. Eso es lo que uno busca en un taller mecánico de confianza. Totalmente recomendado."</p>
+        <div class="flex items-center gap-3">
+          <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:#fff;flex-shrink:0">E</div>
+          <div>
+            <p style="font-weight:600;font-size:0.875rem;color:#fff">Enzo Oyanedel</p>
+            <p style="font-size:0.75rem;color:var(--text-muted)">Local Guide · Hace 8 meses</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="review-card p-7 reveal" style="transition-delay:0.18s">
+        <div class="flex gap-0.5 mb-4">
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p style="color:#e4e4e7;font-size:0.925rem;line-height:1.75;font-style:italic;margin-bottom:1.25rem">"El asesoramiento es muy bueno. No es solamente alguien que te arregla el auto y chao. Nos guían a quienes apenas sabemos echarle agua al auto. Los cuidados que tenemos que tener. Muy agradecido."</p>
+        <div class="flex items-center gap-3">
+          <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#6d28d9);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:#fff;flex-shrink:0">J</div>
+          <div>
+            <p style="font-weight:600;font-size:0.875rem;color:#fff">Jose Calfucura</p>
+            <p style="font-size:0.75rem;color:var(--text-muted)">Local Guide · Hace un año</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="review-card p-7 reveal" style="transition-delay:0.26s">
+        <div class="flex gap-0.5 mb-4">
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p style="color:#e4e4e7;font-size:0.925rem;line-height:1.75;font-style:italic;margin-bottom:1.25rem">"Excelente atención y servicio. Muy transparentes, ordenados y trabajos de calidad. Un taller que transmite confianza desde el primer momento. Sin duda el mejor de Quillota."</p>
+        <div class="flex items-center gap-3">
+          <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#0ea5e9,#0284c7);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:#fff;flex-shrink:0">A</div>
+          <div>
+            <p style="font-weight:600;font-size:0.875rem;color:#fff">Alberto Orellana</p>
+            <p style="font-size:0.75rem;color:var(--text-muted)">Hace 2 meses</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Google -->
+    <div class="mt-10 text-center reveal" style="transition-delay:0.1s">
+      <a href="https://maps.google.com/?q=Mecanica+Gonzalez+Quillota" target="_blank" class="btn-ghost inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Ver todas las reseñas en Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════ -->
+<section class="py-24 px-5 md:px-8" style="background:linear-gradient(135deg,#1a1608 0%,#221c08 50%,#1a1608 100%);border-top:1px solid var(--border-gold);border-bottom:1px solid var(--border-gold)">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="badge-gold mb-6 reveal" style="justify-content:center">¿Tu auto necesita atención?</div>
+    <h2 class="h2-section text-gradient-gold mb-6 reveal" style="transition-delay:0.1s">
+      Agenda tu scanner<br/>o mantención hoy.
+    </h2>
+    <p class="reveal mb-10" style="color:var(--text-sub);font-size:1.05rem;line-height:1.7;max-width:500px;margin-left:auto;margin-right:auto;transition-delay:0.2s">
+      Llámanos o escríbenos por WhatsApp. Respondemos rápido y te damos un diagnóstico honesto desde el primer contacto. Atendemos en <strong style="color:#d4d4d8">Quillota y sectores cercanos</strong>.
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center reveal" style="transition-delay:0.3s">
+      <a href="tel:+56990592644" class="btn-shimmer inline-flex items-center gap-2.5 rounded-full px-8 py-4 text-base font-bold">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.7 19.79 19.79 0 0 1 1.61 4.1 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.68 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-.91a2 2 0 0 1 2.11-.45c.91.33 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+        +56 9 9059 2644
+      </a>
+      <a href="https://wa.me/56990592644?text=Hola%2C%20quisiera%20agendar%20una%20atenci%C3%B3n" target="_blank" class="btn-ghost inline-flex items-center gap-2.5 rounded-full px-8 py-4 text-base font-semibold" style="border-color:rgba(37,211,102,0.4);color:#25d366" onmouseover="this.style.background='rgba(37,211,102,0.1)';this.style.borderColor='#25d366'" onmouseout="this.style.background='';this.style.borderColor='rgba(37,211,102,0.4)'">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.114.553 4.1 1.52 5.824L.057 23.852a.5.5 0 0 0 .614.614l6.098-1.48A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.895 0-3.66-.502-5.183-1.376l-.371-.214-3.862.938.97-3.782-.231-.387A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER / CONTACTO
+══════════════════════════════════════════ -->
+<footer id="contacto" class="py-20 px-5 md:px-8" style="background:var(--surface-2)">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+
+      <!-- Info -->
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-8">
+          <div style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#f5b931,#e5a000);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(245,185,49,0.35)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#09090b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div>
+            <h3 style="font-weight:800;font-size:1.1rem;letter-spacing:-0.02em;color:#fff">Mecánica González</h3>
+            <p style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);font-weight:600">Taller Mecánico · Quillota</p>
+          </div>
+        </div>
+
+        <p style="color:var(--text-sub);line-height:1.75;max-width:380px;margin-bottom:2rem;font-size:0.95rem">
+          Taller mecánico en Quillota especializado en scanner automotriz, diagnóstico electrónico, frenos, inyección y mantención preventiva. El taller de confianza que ya casi no se encuentra.
+        </p>
+
+        <!-- Contact list -->
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <a href="tel:+56990592644" style="display:flex;align-items:center;gap:12px;color:var(--text-sub);text-decoration:none;font-size:0.9rem;transition:color 0.3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-sub)'">
+            <div class="service-icon" style="width:36px;height:36px;border-radius:10px;flex-shrink:0">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.7 19.79 19.79 0 0 1 1.61 4.1 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.68 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-.91a2 2 0 0 1 2.11-.45c.91.33 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            +56 9 9059 2644
+          </a>
+          <div style="display:flex;align-items:center;gap:12px;color:var(--text-sub);font-size:0.9rem">
+            <div class="service-icon" style="width:36px;height:36px;border-radius:10px;flex-shrink:0">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            F-394, Quillota, Valparaíso
+          </div>
+        </div>
+
+        <!-- Horarios -->
+        <div class="bento-card mt-8 p-5 reveal" style="transition-delay:0.15s;border-radius:1rem">
+          <p style="font-weight:700;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem">Horario de atención</p>
+          <div class="hours-row"><span>Lunes – Viernes</span><span style="color:#d4d4d8">8:30 – 18:30</span></div>
+          <div class="hours-row hours-today"><span>Sábado</span><span>8:00 – 13:30</span></div>
+          <div class="hours-row"><span style="color:var(--text-muted)">Domingo</span><span style="color:var(--text-muted)">Cerrado</span></div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container reveal" style="transition-delay:0.2s">
+        <div style="border-radius:1.5rem;overflow:hidden;height:100%;min-height:340px;border:1px solid var(--border)">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.9!2d-71.2552!3d-32.8810!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689c02fa10cef35%3A0x0!2sQuillota%2C+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl"
+            width="100%"
+            height="100%"
+            style="border:0;min-height:340px;border-radius:1.5rem;filter:grayscale(40%) brightness(0.65) contrast(1.15) hue-rotate(200deg)"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Mecánica González">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider mb-8"></div>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <p style="color:var(--text-muted);font-size:0.8rem">
+        © 2025 Mecánica González · Taller Mecánico en Quillota, Valparaíso · F-394 · Todos los derechos reservados
+      </p>
+      <div class="flex items-center gap-2">
+        <span style="font-size:0.75rem;color:var(--text-muted)">Calificación Google</span>
+        <div class="flex gap-0.5">
+          <svg class="star-fill" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg class="star-fill" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <span style="font-weight:700;font-size:0.8rem;color:#fff">5.0</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════ -->
+<script>
+  // ── Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => {
+    if (window.scrollY > 50) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ── IntersectionObserver for reveal animations
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(el => observer.observe(el));
+
+  // ── Staggered delay for child groups
+  document.querySelectorAll('.grid, .flex').forEach(container => {
+    const children = [...container.querySelectorAll('.reveal')];
+    children.forEach((child, i) => {
+      if (!child.style.transitionDelay) {
+        child.style.transitionDelay = `${i * 0.08}s`;
+      }
+    });
+  });
+
+  // ── Hero elements instant reveal on load
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.hero section .reveal, .reveal').forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight) {
+        setTimeout(() => el.classList.add('visible'), 100);
+      }
+    });
+  });
+
+  // ── Smooth mobile scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ── Bento card glow tracking (desktop only)
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('.bento-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width * 100).toFixed(1);
+        const y = ((e.clientY - rect.top) / rect.height * 100).toFixed(1);
+        card.querySelector('::before');
+        card.style.setProperty('--mouse-x', x + '%');
+        card.style.setProperty('--mouse-y', y + '%');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
